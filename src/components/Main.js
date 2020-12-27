@@ -1,6 +1,7 @@
+
 function Main() {
     return (
-      <div>
+      <div class="main">
       </div>
     );
 }

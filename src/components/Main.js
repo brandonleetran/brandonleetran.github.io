@@ -4,11 +4,18 @@ import React from 'react'
 function Main(props) {
 
   let hasButton = props.button;
-  if (hasButton) {
-    console.log("fafads");
 
+  if (hasButton) {
+    function handleScroll(e) {
+      console.log(e.target);
+      if (e.deltaY > 0)
+      {
+        document.getElementById('animation').setAttribute("id", "animation");
+      }
+    }
+    
     return (
-      <div className="main" style={{ backgroundImage: `url(${props.image})` }}>
+      <div onWheelCapture={handleScroll} className="main" id="animation" style={{ backgroundImage: `url(${props.image})` }}>
         <div id="main-header">
           <p id="title">{props.title}</p>
           <p id="subtitle">{props.subtitle}</p>

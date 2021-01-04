@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="app">
       <div className="app-content">
-        <Main title="Brandon Lee Tran" subtitle="Software Engineer" image={Image} button={false}/>
-        <Main title="Resumé" subtitle="Download below." image={Image2} button={true}/>
+        <Main title="Brandon Lee Tran" subtitle="Software Engineer" image={Image} button={false} animation={false}/>
+        <Main title="Resumé" subtitle="Download below." image={Image2} button={true} animation={true}/>
       </div>
     </div>
   );
